@@ -2,6 +2,7 @@ import { useState } from "react";
 import Jobs from "./components/Jobs";
 import Search from "./components/Filter";
 import { FiltersType } from "../types/types";
+import Footer from "./components/Footer";
 
 function App() {
   const [filters, setFilters] = useState<FiltersType>({});
@@ -13,7 +14,7 @@ function App() {
         <Search filters={filters} setFilters={setFilters} />
         <Jobs filters={filters} setFilters={setFilters} />
       </div>
-      <div className="h-10 w-full bg-primary flex items-center justify-center text-white">minezzi</div>
+      <Footer />
     </div>
   );
 }
