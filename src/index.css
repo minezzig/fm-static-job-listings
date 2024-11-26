@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .container {
+        max-width: 1248px;
+        margin: auto;
+    }
+    .box {
+        background: hsl(180, 52%, 96%)
+    }
+    .shadowBox{
+        box-shadow: 2px 2px 30px -10px rgba(91, 164, 164, 70%);
+    }
+}
