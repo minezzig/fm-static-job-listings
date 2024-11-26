@@ -3,7 +3,7 @@ function Footer() {
   
     return (
       <div className="flex h-10 w-full items-center justify-center bg-primary text-white">
-        Developed by <a href="http://www.github.com/minezzig">Greg Minezzi</a> ©&nbsp;<span>{year}</span>
+        Developed by&nbsp;<a href="http://www.github.com/minezzig" className="underline">Greg Minezzi</a>&nbsp;©&nbsp;<span>{year}</span>
       </div>
     );
   }
