@@ -22,8 +22,8 @@ function Job({ job, filters, setFilters }: JobProps) {
   };
 
   return (
-    <div className="shadowBox relative flex w-full flex-col rounded bg-white p-5 pt-10 md:flex-row md:items-center md:justify-between md:pt-5 group">
-      <div className="group-hover:bg-primary transition-all h-full w-1 absolute left-0 top-0 rounded-l-lg"></div>
+    <div className="shadowBox relative flex w-full flex-col rounded bg-white p-5 pt-10 md:flex-row md:items-center md:justify-between md:pt-5">
+      {job.featured && <div className="bg-primary h-full w-1 absolute left-0 top-0 rounded-l-lg"></div>}
       <div className="flex items-center">
         <div className="absolute top-0 -translate-y-1/2 md:static md:translate-y-0">
           <img src={job.logo} alt="image" className="w-3/4" />
