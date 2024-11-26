@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
-import jobsList from "../../data.json";
-import { JobsProps } from "../../types/types";
+import jobsList from "../data/data.json";
+import { JobsProps, JobType } from "../../types/types";
 import Job from "./Job";
-import { JobType } from "../../types/types";
-
 function Jobs({ filters, setFilters }: JobsProps) {
   const [filteredList, setFilterdList] = useState<JobType[]>([]);
 

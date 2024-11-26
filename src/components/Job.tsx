@@ -1,5 +1,4 @@
-import { JobProps } from "../../types/types";
-import { FiltersType } from "../../types/types";
+import { JobProps, FiltersType } from "../../types/types";
 
 function Job({ job, filters, setFilters }: JobProps) {
   const handleAddFilter = (key: keyof FiltersType, value: string) => {
